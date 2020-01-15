@@ -1,4 +1,5 @@
 def fizzbuzz(number)
-  STDOUT.puts "hi"
-  p number
+  if number % 3 == 0
+    "Fizz"
+  end
 end
