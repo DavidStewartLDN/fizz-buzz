@@ -19,7 +19,20 @@ RSpec.describe "FizzBuzz testing" do
     expect(fizzbuzz(10)).to eq 'Buzz'
   end
 
-  it "When passed the number 4, the program returns the message 'Buzz'" do
+  it "When passed the number 4, the program does NOT return the message 'Buzz'" do
     expect(fizzbuzz(4)).not_to eq 'Buzz'
   end
+
+  it "returns 'FizzBuzz' when passed 15" do
+    expect(fizzbuzz(15)).to eq "FizzBuzz"
+  end
+
+  it "returns 'FizzBuzz' when passed 300 (multiple of 3 and 5)" do
+    expect(fizzbuzz(300)).to eq "FizzBuzz"
+  end
+
+  it "When passed the number 31, the program does NOT return the message 'FizzBuzz'" do
+    expect(fizzbuzz(31)).not_to eq 'Buzz'
+  end
+
 end
